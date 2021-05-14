@@ -1,21 +1,20 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Student {
     String name;
-    Long property_id;
+    Long user_id;
+    ArrayList<Integer> grades;
 
     public Student(String name) {
         this.name = name;
     }
 
-    public Student(Long property_id) {
-        this.property_id = property_id;
 
+    public Student(long id, String name) {
     }
 
-        public Grades() {
-        this.students = new ArrayList<>();
+    public void Grades(int grade) {
+        this.grades = new ArrayList<>();
     }
 
 //    // returns the student's id
