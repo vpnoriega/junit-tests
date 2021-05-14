@@ -1,20 +1,23 @@
 import java.util.ArrayList;
 
 public class Student {
-    String name;
-    Long user_id;
-    ArrayList<Integer> grades;
-
-    public Student(String name) {
-        this.name = name;
-    }
+   private String name;
+   private Long user_id;
+   private ArrayList<Integer> grades;
 
 
     public Student(long id, String name) {
+        this.user_id = id;
+        this.name = name;
+        this.grades = new ArrayList<>();
     }
 
-    public void Grades(int grade) {
-        this.grades = new ArrayList<>();
+    public long getId(){
+        return this.user_id;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
 //    // returns the student's id
